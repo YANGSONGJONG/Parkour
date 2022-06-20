@@ -6,7 +6,7 @@ namespace YANGSONGJING
     /// <summary>
     /// 跑步系統
     /// </summary>
-
+    
     public class SystemRun : MonoBehaviour
     {
         #region 資料 : 保存系統需要的資料
@@ -21,7 +21,7 @@ namespace YANGSONGJING
         // Header 標題 : 可以使用中文
         // Tooltip 提示 : 可以使用中文
         // Range 範圍 : 僅限於數值類型資料 int, float, byte, long
-        
+
         [SerializeField, Header("跑步速度"), Tooltip("這是角色的跑步速度"), Range(0, 100)]
         private float speedRun = 3.5f;
         [SerializeField, Header("跳躍高度"), Tooltip("這是角色的跳躍速度"), Range(0, 3000)]
@@ -46,14 +46,27 @@ namespace YANGSONGJING
         }
         private void Start()
         {
-            print("12");
+           // print("12");
         }
         // 更新事件 : 每秒執行約六十次 60FPS Frame per second
+        /// <summary>
+        /// 跑步功能
+        /// </summary>
+        private void Run()
+        {
+            print("跑步中~");
+            rig.velocity = new Vector2(speedRun, rig.velocity.y);
+        }
         private void Update()
         {
-            print("<color=yellow>更新事件執行中~</color>");
+            // print("<color=yellow>更新事件執行中~</color>");
+            Run();
         }
         
+        // 方法 Method
+        // 語法
+        // 修飾詞 傳回資料型態 方法名稱(參數) { 程式 }
+
         #endregion
     }
 }

@@ -42,7 +42,7 @@ namespace YANGSONGJING
 
             float distance = Vector3.Distance(a,b);
             print("<color=yellow>距離: " + distance + "</color>");
-            Application.OpenURL("https://unity.com/");
+            //Application.OpenURL("https://unity.com/");          
         }
 
         private void Update()
@@ -52,8 +52,5 @@ namespace YANGSONGJING
             print("<color=red>是否按下空白鍵 :" + Input.GetKeyDown(KeyCode.Space) + "</color>");
 
         }
-        
-        
-
     }
 }
