@@ -376,7 +376,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772727, y: 1}
+    m_SensorSize: {x: 1.7788018, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -415,6 +415,7 @@ GameObject:
   - component: {fileID: 1340958015}
   - component: {fileID: 1340958014}
   - component: {fileID: 1340958016}
+  - component: {fileID: 1340958017}
   m_Layer: 0
   m_Name: "\u539F\u4F4F\u6C11"
   m_TagString: Untagged
@@ -560,6 +561,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRun: 0
   heightJump: 350
+--- !u!114 &1340958017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340958010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6d604694a6ce44d8bf0b12b94b4161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1488863794
 GameObject:
   m_ObjectHideFlags: 0
