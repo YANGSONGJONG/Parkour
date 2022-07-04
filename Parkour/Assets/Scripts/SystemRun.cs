@@ -62,7 +62,18 @@ namespace YANGSONGJING
             // print("<color=yellow>更新事件執行中~</color>");
             Run();
         }
-        
+
+        // 此元件被勾選時執行一次
+        private void OnEnable()
+        {
+            
+        }
+
+        //此元件被取消時執行一次
+        private void OnDisable()
+        {
+            rig.velocity = Vector3.zero;
+        }
         // 方法 Method
         // 語法
         // 修飾詞 傳回資料型態 方法名稱(參數) { 程式 }
