@@ -19,6 +19,7 @@ namespace YANGSONGJING
 
         private void Start()
         {
+            textFinal.text = stringTitle;
             InvokeRepeating("FadeIn", 0, 0.2f);
         }
         /// <summary>
